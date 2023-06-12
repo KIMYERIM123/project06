@@ -1,0 +1,93 @@
+.header {
+  width: 100%;
+  background-color: rgba(0, 48, 36, 0.8);
+
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.header h1 {
+  font-size: 0;
+}
+
+.header .header_wrap {
+  display: flex;
+  color: #fff;
+  max-width: 1460px;
+  height: 90px;
+  margin: 0 auto;
+  padding: 0 15px;
+  align-items: center;
+}
+
+.header .gnb {
+  margin: 0 0 0 auto;
+}
+
+.header .gnb > ul {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+}
+
+.header .menu_icon {
+  margin: 0 0 0 auto;
+  font-size: 25px;
+}
+
+/*  */
+
+.mainvisual .mainslide .itm {
+  width: 100%;
+  height: 100vh;
+}
+
+.mainvisual .mainslide .itm01 {
+  background: url(../img/main_visual_01.jpg) no-repeat center center/cover;
+}
+
+.mainvisual .mainslide .itm02 {
+  background: url(../img/main_visual_03.jpg) no-repeat center center/cover;
+}
+
+.mainvisual .mainslide .itm03 {
+  background: url(../img/main_visual_02.jpg) no-repeat center center/cover;
+}
+
+.mainslide .mainslide {
+}
+
+.mainvisual .slogan {
+  max-width: 1460px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  position: relative;
+  top: 30%;
+}
+
+.mainvisual .slogan .slogan_tit {
+  font-size: 67px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 75px;
+
+  margin: 0 0 40px 0;
+}
+
+.mainvisual .slogan span {
+  color: #fff;
+}
+
+.mainvisual .slogan strong {
+  color: #f5a906;
+}
+
+.mainvisual .slogan p {
+  font-size: 20px;
+  color: #999;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
