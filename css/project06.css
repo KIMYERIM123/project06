@@ -25,7 +25,7 @@
   margin: 0 0 0 auto;
 }
 
-.header .gnb > ul {
+.header .gnb>ul {
   display: flex;
   gap: 50px;
   font-size: 18px;
@@ -44,18 +44,15 @@
 }
 
 .mainvisual .mainslide .itm01 {
-  background: url(../img/main_visual_01.jpg) no-repeat center center/cover;
+  background: url(../img/main01.jpg) no-repeat center center/cover;
 }
 
 .mainvisual .mainslide .itm02 {
-  background: url(../img/main_visual_03.jpg) no-repeat center center/cover;
+  background: url(../img/main02.jpg) no-repeat center center/cover;
 }
 
 .mainvisual .mainslide .itm03 {
-  background: url(../img/main_visual_02.jpg) no-repeat center center/cover;
-}
-
-.mainslide .mainslide {
+  background: url(../img/main03.jpg) no-repeat center center/cover;
 }
 
 .mainvisual .slogan {
@@ -91,3 +88,169 @@
   line-height: 26px;
   letter-spacing: 1px;
 }
+
+/* 여기까지 mainvisual */
+
+.main_menu {
+  background: #003125;
+  padding: 130px 0;
+}
+
+.main_menu .menu_tit {
+  max-width: 1460px;
+  padding: 0 15px;
+  margin: 0 auto 20px auto;
+  color: #f8b307;
+}
+
+.main_menu h2 {
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 8.0px;
+  margin: 0 0 5px 0;
+}
+
+.main_menu .menu_tit strong {
+  font-size: 55px;
+  font-weight: 600;
+
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+
+.main_menu .menu_tit span {
+  font-size: 55px;
+  font-weight: 300;
+}
+
+.main_menu .menu_inner {
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+.main_menu .img_box img {
+  width: 100%;
+  height: 700px;
+
+}
+
+/* .main_menu .menu_slide {
+  position: relative;
+} */
+
+.main_menu figure {
+  position: relative;
+}
+
+.main_menu .cont_slogan {
+  background: rgba(255, 177, 0, 0.8);
+  backdrop-filter: blur(3px);
+  padding: 130px 80px;
+
+
+  position: absolute;
+  right: 0;
+  left: 60%;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.main_menu figure:hover .cont_slogan {
+
+  background: rgba(230, 189, 170, 0.9);
+}
+
+
+
+
+.main_menu h3 {
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 8.0px;
+  margin: 0 0 5px 0;
+  color: #003125;
+  margin: 0 0 20px 0;
+}
+
+.main_menu .cont_slogan span {
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #003125;
+}
+
+.main_menu .cont_slogan strong {
+  font-size: 44px;
+  font-weight: 200;
+  line-height: 48px;
+  letter-spacing: 1px;
+  color: #003125;
+  display: inline-block;
+  margin: 0 0 20px 0;
+}
+
+.main_menu .cont_slogan p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.main_menu .menu_slide {
+  position: relative;
+}
+
+.main_menu .menu_slide .slick-dots {
+  position: absolute;
+  bottom: 100px;
+  right: 178px;
+}
+
+.main_menu .menu_slide .slick-dots li {
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background: #fff;
+  margin: 0 8px 0 0;
+}
+
+.main_menu .menu_slide .slick-dots li.slick-active {
+  background: #003125;
+}
+
+.main_menu .menu_slide .slick-dots button {
+  display: none;
+}
+
+.main_menu i {
+  color: #003125;
+  font-size: 50px;
+}
+
+.main_menu .menu_inner {
+  position: relative;
+}
+
+.main_menu .menu_arrows {
+  position: absolute;
+  bottom: 132px;
+  right: 350px;
+
+}
+
+.main_menu .menu_arrows .left {
+  position: absolute;
+
+  left: -360px;
+}
+
+.main_menu .menu_arrows .right {
+  position: absolute;
+
+  right: -200px;
+}
+
+/* 여기까지 main_menu */
