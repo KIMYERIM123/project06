@@ -13,11 +13,16 @@ $(function () {
     autoplaySpeed: 3000,
   });
 
-  $('.main_menu .menu_arrows .left').on('click', function () {
-    $('._slide').slick('slickPrev')
+  $(".main_menu .menu_arrows .left").on("click", function () {
+    $("._slide").slick("slickPrev");
   });
-  $('.main_menu .menu_arrows .right').on('click', function () {
-    $('.menu_slide').slick('slickNext')
+  $(".main_menu .menu_arrows .right").on("click", function () {
+    $(".menu_slide").slick("slickNext");
   });
 
+  $(".his_left li").on("click", function (e) {
+    e.preventDefault();
+    let idx = $(this).index();
+    $(".his_right li").eq(idx).addClass("on").siblings().removeClass("on");
+  });
 });
