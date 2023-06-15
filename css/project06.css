@@ -27,8 +27,9 @@
 
 .header .gnb>ul {
   display: flex;
-  gap: 50px;
+  gap: 60px;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .header .menu_icon {
@@ -91,6 +92,142 @@
 
 /* 여기까지 mainvisual */
 
+.main_history {
+  padding: 100px 0;
+}
+
+.main_history .his_tit {
+  max-width: 1460px;
+  margin: 0 auto 30px auto;
+  padding: 0 15px;
+}
+
+.main_history h2 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  margin: 0 0 5px 0;
+  padding: 5px 20px 5px 20px;
+  background: #f8b307;
+  color: #003125;
+  border-radius: 5px;
+}
+
+.main_history .his_tit>strong {
+  font-size: 55px;
+  font-weight: 600;
+  margin: 0 20px 0 0;
+}
+
+.main_history .his_tit>span {
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.main_history .his_inner {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main_history .his_left>ul {
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+
+.main_history .his_left>ul>li {
+  display: table-cell;
+  font-size: 20px;
+  gap: 50px;
+  /* border: 1px solid #888; */
+  padding: 8px 50px 8px 50px;
+  cursor: pointer;
+}
+
+
+
+.main_history .his_left>ul>li:nth-child(2) {
+  border-radius: 0;
+}
+
+
+
+
+
+.main_history .his_left>ul>li:hover {
+  background: #003125;
+  color: #fff;
+}
+
+.main_history .his_left>ul>li.on {
+  background: #003125;
+  color: #fff;
+}
+
+
+
+.main_history .his_left>ul>li:nth-child(2) {
+  border-left: 1px solid #ccc7c7;
+  border-right: 1px solid #ccc7c7;
+}
+
+.main_history .his_left {
+  display: inline-block;
+  width: 749.94px;
+}
+
+.main_history .his_right .his_con {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.main_history .his_right strong {
+  display: inline-block;
+  padding: 60px 0 50px 0;
+  font-size: 40px;
+  font-weight: 600;
+  color: #111111;
+  width: 100%;
+  line-height: 45px;
+  position: relative;
+}
+
+.main_history .his_right strong::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ccc7c7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main_history .his_right p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 50px;
+}
+
+.main_history figure {
+  position: relative;
+  left: 35px;
+}
+
+.main_history .his_right li {
+  height: 0;
+  overflow: hidden;
+}
+
+.main_history .his_right li.on {
+  height: auto;
+}
+
+/* 여기까지 main_history */
+
 .main_menu {
   background: #003125;
   padding: 100px 0;
@@ -124,7 +261,8 @@
 }
 
 .main_menu .menu_inner {
-  padding: 0 80px;
+  max-width: 1743px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -218,6 +356,7 @@
 .main_menu i {
   color: #003125;
   font-size: 50px;
+  cursor: pointer;
 }
 
 .main_menu .menu_inner {
@@ -227,7 +366,7 @@
 .main_menu .menu_arrows {
   position: absolute;
   bottom: 132px;
-  right: 350px;
+  right: 280px;
 }
 
 .main_menu .menu_arrows .left {
@@ -243,119 +382,122 @@
 
 /* 여기까지 main_menu */
 
-.main_history {
+.main_since {
+  background: #ffb100;
   padding: 100px 0;
-}
 
-.main_history .his_tit {
-  max-width: 1460px;
-  margin: 0 auto 30px auto;
-  padding: 0 15px;
-}
-
-.main_history h2 {
-  display: inline-block;
-  font-size: 40px;
-  font-weight: 300;
-  letter-spacing: 8px;
-  margin: 0 0 5px 0;
-  padding: 5px 20px 5px 20px;
-  background: #f8b307;
-  color: #003125;
-  border-radius: 5px;
-}
-
-.main_history .his_tit>strong {
-  font-size: 55px;
-  font-weight: 600;
-  margin: 0 20px 0 0;
-}
-
-.main_history .his_tit>span {
-  font-size: 55px;
-  font-weight: 600;
-}
-
-.main_history .his_inner {
-  max-width: 1460px;
-  margin: 0 auto;
-  padding: 0 0 0 15px;
-}
-
-.main_history .his_left>ul {
-  display: table;
-  width: 100%;
-  text-align: center;
-}
-
-.main_history .his_left>ul>li {
-  display: table-cell;
-  font-size: 20px;
-  gap: 50px;
-  border: 1px solid #888;
-  border-radius: 5px;
-  padding: 8px 50px 8px 50px;
-  cursor: pointer;
-}
-
-.main_history .his_left>ul>li:last-child {
-  border-left: none;
-}
-
-.main_history .his_left>ul>li:first-child {
-  border-right: none;
-}
-
-.main_history .his_left {
-  display: inline-block;
-  width: 749.94px;
-}
-
-.main_history .his_right .his_con {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.main_history .his_right .con_inner {}
-
-.main_history .his_right strong {
-  display: inline-block;
-  padding: 60px 0 50px 0;
-  font-size: 40px;
-  font-weight: 600;
-  color: #111111;
-  width: 100%;
-  line-height: 45px;
   position: relative;
 }
 
-.main_history .his_right strong::before {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: #ccc7c7;
+.main_since .sin_inner {
+  max-width: 1743px;
+  height: 500px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+
+
+.main_since .sin_left h2 {
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 8px;
+  margin: 0 0 8px 0;
+}
+
+.main_since .sin_left span {
+  display: block;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+
+.main_since .sin_left strong {
+  display: block;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 1px;
+  color: #1e4f40;
+  margin-bottom: 50px;
+}
+
+.main_since .sin_left p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.main_since .sin_left {
+  position: relative;
+}
+
+.main_since .sin_left a {
   position: absolute;
   bottom: 0;
-  left: 0;
+
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid #1e4f40;
+  border-radius: 10px;
+  color: #1e4f40;
+  padding: 10px 50px;
 }
 
-.main_history .his_right p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  margin-top: 50px;
+.main_since .sin_left a:hover {
+  background: #1e4f40;
+  color: #fff;
 }
 
-.main_history figure {
-  position: relative;
-  left: 34px;
+.main_since .sin_left i {
+  font-size: 20px;
 }
 
-.main_history .his_right li {
-  height: 0;
+
+
+
+
+.main_since .sin_right figure .img_box01 {
+  position: absolute;
+  right: 95px;
+  top: 0;
+  width: 700px;
   overflow: hidden;
+  margin: 100px 0 0 0;
 }
 
-.main_history .his_right li.on {
-  height: auto;
+.main_since .sin_right figure .img_box02 {
+  position: absolute;
+  bottom: 0;
+  left: 600px;
+  width: 700px;
+  height: 443px;
+  overflow: hidden;
+  margin: 0 0 100px 0;
+}
+
+.main_since .sin_right figure .img_box02 img {
+  width: 700px;
+  height: 443px;
+}
+
+.main_since .sin_right figure img {
+  transition: 1s;
+}
+
+.main_since .sin_right figure:hover img {
+  transform: scale(1.2);
+}
+
+/* 여기까지 main_since */
+
+
+.main_sns {
+  padding: 100px 0;
 }

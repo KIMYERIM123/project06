@@ -1,4 +1,5 @@
 $(function () {
+
   $(".mainslide").slick({
     autoplay: true,
     autoplaySpeed: 3000,
@@ -14,7 +15,7 @@ $(function () {
   });
 
   $(".main_menu .menu_arrows .left").on("click", function () {
-    $("._slide").slick("slickPrev");
+    $(".menu_slide").slick("slickPrev");
   });
   $(".main_menu .menu_arrows .right").on("click", function () {
     $(".menu_slide").slick("slickNext");
@@ -24,5 +25,12 @@ $(function () {
     e.preventDefault();
     let idx = $(this).index();
     $(".his_right li").eq(idx).addClass("on").siblings().removeClass("on");
+    $(this).addClass("on").siblings().removeClass("on");
   });
+
+
+
+
+
+
 });
