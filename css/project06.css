@@ -24,7 +24,7 @@
   margin: 0 0 0 auto;
 }
 
-.header .gnb > ul {
+.header .gnb>ul {
   display: flex;
   gap: 100px;
   font-size: 18px;
@@ -38,11 +38,11 @@
 
 /*  여기까지 header */
 
-.header .gnb > ul > li {
+.header .gnb>ul>li {
   position: relative;
 }
 
-.header .gnb > ul > li > a {
+.header .gnb>ul>li>a {
   display: inline-block;
   width: 100%;
 }
@@ -79,11 +79,11 @@
   border-top: 1px solid#515752;
 }
 
-.header .gnb:hover > ul > li .sub {
+.header .gnb:hover>ul>li .sub {
   height: 500px;
 }
 
-.header .sub > li:hover {
+.header .sub>li:hover {
   color: tomato;
 }
 
@@ -97,8 +97,18 @@
 
 /* 여기까지 header 서브메뉴 */
 
+
+.mainvisual {
+  height: 100vh;
+}
+
 .mainvisual .mainslide .itm {
   width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mainvisual {
   height: 100vh;
 }
 
@@ -112,6 +122,14 @@
 
 .mainvisual .mainslide .itm03 {
   background: url(../img/main03.jpg) no-repeat center center/cover;
+}
+
+.mainvisual .mainslide .itm04 {
+  background: url(../img/main04.jpg) no-repeat center center/cover;
+}
+
+.mainvisual .mainslide .itm05 {
+  background: url(../img/main05.jpg) no-repeat center center/cover;
 }
 
 .mainvisual .slogan {
@@ -143,7 +161,7 @@
 
 .mainvisual .slogan p {
   font-size: 20px;
-  color: #999;
+  color: #ddd;
   line-height: 26px;
   letter-spacing: 1px;
 }
@@ -172,13 +190,13 @@
   border-radius: 5px;
 }
 
-.main_history .his_tit > strong {
+.main_history .his_tit>strong {
   font-size: 55px;
   font-weight: 600;
   margin: 0 20px 0 0;
 }
 
-.main_history .his_tit > span {
+.main_history .his_tit>span {
   font-size: 55px;
   font-weight: 600;
 }
@@ -189,36 +207,37 @@
   padding: 0 15px;
 }
 
-.main_history .his_left > ul {
+.main_history .his_left>ul {
   display: table;
   width: 100%;
   text-align: center;
 }
 
-.main_history .his_left > ul > li {
+.main_history .his_left>ul>li {
   display: table-cell;
-  font-size: 20px;
+  font-size: 18px;
   gap: 50px;
   /* border: 1px solid #888; */
   padding: 8px 50px 8px 50px;
   cursor: pointer;
 }
 
-.main_history .his_left > ul > li:nth-child(2) {
+.main_history .his_left>ul>li:nth-child(2) {
   border-radius: 0;
 }
 
-.main_history .his_left > ul > li:hover {
+.main_history .his_left>ul>li:hover {
+  background: #003125;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.main_history .his_left>ul>li.on {
   background: #003125;
   color: #fff;
 }
 
-.main_history .his_left > ul > li.on {
-  background: #003125;
-  color: #fff;
-}
-
-.main_history .his_left > ul > li:nth-child(2) {
+.main_history .his_left>ul>li:nth-child(2) {
   border-left: 1px solid #ccc7c7;
   border-right: 1px solid #ccc7c7;
 }
@@ -238,7 +257,7 @@
   padding: 60px 0 50px 0;
   font-size: 40px;
   font-weight: 600;
-  color: #111111;
+  color: #262c2c;
   width: 100%;
   line-height: 45px;
   position: relative;
@@ -255,8 +274,7 @@
 }
 
 .main_history .his_right p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 16px;
   line-height: 26px;
   margin-top: 50px;
 }
@@ -372,7 +390,7 @@
 
 .main_menu .cont_slogan p {
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 24px;
 }
@@ -475,9 +493,10 @@
 }
 
 .main_since .sin_left p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 24px;
+  margin-bottom: 50px;
 }
 
 .main_since .sin_left {
@@ -485,14 +504,14 @@
 }
 
 .main_since .sin_left a {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
 
   display: inline-block;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
   border-radius: 10px;
-  padding: 20px 70px;
+  padding: 15px 60px;
   background: #1e4f40;
   color: #fff;
 }
@@ -560,8 +579,8 @@
 }
 
 .main_store .left .slogan p {
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 16px;
+  font-weight: 300;
   color: #d1cdcd;
   line-height: 25px;
   margin: 0 0 40px 0;
@@ -569,8 +588,7 @@
 
 .main_store .left .slogan a {
   display: inline-block;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 16px;
   color: #111;
   background: #f5a906;
   padding: 20px 50px;
@@ -597,8 +615,8 @@
 }
 
 .main_store .right .slogan p {
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 16px;
+  font-weight: 300;
   color: #d1cdcd;
   line-height: 25px;
   margin: 0 0 40px 0;
@@ -606,8 +624,7 @@
 
 .main_store .right .slogan a {
   display: inline-block;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 16px;
   color: #111;
   background: #f5a906;
   padding: 20px 50px;
@@ -617,7 +634,7 @@
 /* 여기까지 main_store */
 
 .footer {
-  padding: 80px 0;
+  padding: 40px 0;
   background: #202020;
 }
 
@@ -632,6 +649,7 @@
   color: #a7a7a7;
   gap: 30px;
   margin: 0 0 40px 0;
+  font-size: 14px;
 }
 
 .footer .seoga strong {
@@ -642,7 +660,7 @@
   display: flex;
   color: #f5a906;
   gap: 30px;
-  font-size: 22px;
+  font-size: 18px;
   margin: 0 0 40px 0;
 }
 
@@ -650,12 +668,54 @@
   display: flex;
   gap: 30px;
   color: #a7a7a7;
+  font-size: 14px;
 }
 
 .footer address {
   color: #a7a7a7;
   line-height: 28px;
   font-style: inherit;
+  font-size: 12px;
 }
 
 /* 여기까지 footer */
+
+
+.mainvisual {
+  position: relative;
+}
+
+.mainvisual .scr {
+  display: block;
+  max-width: 1460px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  position: relative;
+  bottom: 130px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.mainvisual .scr span {
+  display: block;
+  width: 64px;
+  text-align: center;
+  margin: 20px 0 3px 0;
+}
+
+.mainvisual .scr img {
+  animation: wheel 0.8s infinite;
+
+}
+
+@keyframes wheel {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 15px);
+  }
+}

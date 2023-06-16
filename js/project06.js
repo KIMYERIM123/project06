@@ -6,12 +6,20 @@ $(function () {
     arrows: false,
   });
 
+  $('.scr').on('click', function (e) {
+    e.preventDefault();
+    const st = $(this.hash).offset().top - 250;
+    console.log(st);
+    $('html, body').animate({ scrollTop: st }, 600)
+  });
+
+
   $(".menu_slide").slick({
     arrows: false,
     dots: true,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
   });
 
   $(".main_menu .menu_arrows .left").on("click", function () {
